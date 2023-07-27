@@ -1,0 +1,197 @@
+package com.ga;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class SolutionValidator {
+
+  private SolutionValidator() {}
+
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+  // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
+
+  public static boolean validate(IndividualSolution lIlIIlIllIlIIlliIlIlIllIIIll) {
+    return lIlllllIlIIlIlllIlIIIlIIlIIl(lIlIIlIllIlIIlliIlIlIllIIIll)
+        && lIlllllIlIIlIlIlIlIIIlIIlIIl(lIlIIlIllIlIIlliIlIlIllIIIll);
+  }
+
+  private static boolean lIlllllIlIIlIlllIlIIIlIIlI(IndividualSolution lIllllIlllllllIlIllllIlIll) {
+    List<Integer> lIllllIllllllIIlIlllllIlII = lIllllIlllllllIlIllllIlIll.getChessBoard();
+    return IntStream.range(0, lIlIIIlIIlIllIlIIlIIlllIlI())
+        .noneMatch(
+            lIlIlIIlIlIIlIIlIIIlIlIlll ->
+                IntStream.range(lIlIlIIlIlIIlIIlIIIlIlIlll + 1, lIlIIIlIIlIllIlIIlIIlllIlI())
+                    .anyMatch(
+                        lIlIlIIlIIIlIlllIllIlIllII -> {
+                          int lIllllIlllllIIIIlIIllIlIII =
+                              lIllllIllllllIIlIlllllIlII.get(lIlIlIIlIlIIlIIlIIIlIlIlll);
+                          int lIlIlIIlIIIlIlllIllIlIlIlI =
+                              lIllllIllllllIIlIlllllIlII.get(lIlIlIIlIIIlIlllIllIlIllII);
+                          return Math.abs(lIllllIlllllIIIIlIIllIlIII - lIlIlIIlIIIlIlllIllIlIlIlI)
+                              == lIlIlIIlIIIlIlllIllIlIllII - lIlIlIIlIlIIlIIlIIIlIlIlll;
+                        }));
+  }
+
+  private static boolean lIlIIlIIlIlIIllIIIIIIlIlII(IndividualSolution lIlIIlIIlIlIIlIlllIlIllllI) {
+    var lIlIIlIIlIIllIIIIIlIlIIll =
+        IntStream.range(0, lIlIlIlIIlIIlIIlIIIIIIlllI())
+            .boxed()
+            .collect(Collectors.toCollection(HashSet::new));
+    var lIllIllIllllllIllIlIIIlII = new HashSet<>(lIlIIlIIlIlIIlIlllIlIllllI.getChessBoard());
+    return lIllIllIllllllIllIlIIIlII.equals(lIlIIlIIlIIllIIIIIlIlIIll);
+  }
+
+  public static int lIlIlIlIIlIIlIIlIIIIIIlllI() {
+    return Configuration.BOARD_SIZE;
+  }
+
+  public static int lIlIIIlIIlIllIlIIlIIlllIlI() {
+    return lIlIlIlIIlIIlIIlIIIIIIlllI() - 1;
+  }
+
+  public static boolean lIlllllIlIIlIlIlIlIIIlIIlIIl(
+      IndividualSolution lIlIIlIllIlIIlliIlIlIllIIIll) {
+    return lIlllllIlIIlIlllIlIIIlIIlI(lIlIIlIllIlIIlliIlIlIllIIIll);
+  }
+
+  public static boolean lIlllllIlIIlIlllIlIIIlIIlIIl(
+      IndividualSolution lIlIIlIllIlIIlliIlIlIllIIIll) {
+    return lIlIIlIIlIlIIllIIIIIIlIlII(lIlIIlIllIlIIlliIlIlIllIIIll);
+  }
+}
