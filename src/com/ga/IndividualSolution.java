@@ -27,6 +27,7 @@ public class IndividualSolution {
 
   public IndividualSolution(List<Integer> parentBoardPart1, List<Integer> parentBoardPart2) {
     chessBoard = ListUtils.union(parentBoardPart1, parentBoardPart2);
+    evaluateAndSetFitness();
   }
 
   public void evaluateAndSetFitness() {

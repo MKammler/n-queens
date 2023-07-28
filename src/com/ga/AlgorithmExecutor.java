@@ -22,19 +22,18 @@ public class AlgorithmExecutor {
       if (currentGeneration % Configuration.PRINT_EVERY_N_GENERATIONS == 0) {
         printFitnessStatistic(population);
       }
-      population = Selector.selectIndividualsForCrossover(population);
-      population = Reproducer.createNextGeneration(population);
-      Evaluator.evaluate(population);
       if (exitCriterionFulfilled(population)) {
         break;
       }
+      population = Selector.selectIndividualsForCrossover(population);
+      population = Reproducer.createNextGeneration(population);
       Mutator.mutate(population);
     }
     validateAndPrintBestSolution(population);
   }
 
   private boolean exitCriterionFulfilled(List<IndividualSolution> population) {
-    // TODO: Given the population, return true if the problem is solved.
+    // TODO: Given the population, return true if the problem is solved (optional, but saves time).
     return false;
   }
 
