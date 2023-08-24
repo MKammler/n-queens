@@ -4,13 +4,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class AlgorithmExecutor {
 
   private boolean problemSolved = false;
   private int currentGeneration;
-
-  AlgorithmExecutor() {}
 
   public void execute() {
 

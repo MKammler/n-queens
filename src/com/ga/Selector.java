@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Selector {
   private static final Random random = new Random();
-
-  private Selector() {}
 
   public static List<IndividualSolution> selectIndividualsForCrossover(
       List<IndividualSolution> population) {

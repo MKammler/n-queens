@@ -4,10 +4,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class SolutionValidator {
-
-  private SolutionValidator() {}
 
   // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)
   // YOU SHOULD NOT BE HERE, DON'T CHEAT ;)

@@ -3,12 +3,13 @@ package com.ga;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Reproducer {
 
   private static final Random random = new Random();
-
-  private Reproducer() {}
 
   public static List<IndividualSolution> createNextGeneration(List<IndividualSolution> population) {
 

@@ -2,12 +2,13 @@ package com.ga;
 
 import java.util.List;
 import java.util.Random;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Mutator {
 
   private static final Random random = new Random();
-
-  private Mutator() {}
 
   public static void mutate(List<IndividualSolution> population) {
     population.forEach(

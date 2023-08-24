@@ -30,7 +30,7 @@ public class IndividualSolution {
     evaluateAndSetFitness();
   }
 
-  public void evaluateAndSetFitness() {
+  private void evaluateAndSetFitness() {
     // TODO: Determine and set the fitness value for this individual solution. The higher the
     // fitness, the more likely it is to be chosen for crossover.
     this.fitness = Double.MAX_VALUE;
