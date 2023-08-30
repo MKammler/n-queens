@@ -3,6 +3,7 @@ package com.ga;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,8 +32,17 @@ public class IndividualSolution {
   }
 
   private void evaluateAndSetFitness() {
-    // TODO: Determine and set the fitness value for this individual solution. The higher the
-    // fitness, the more likely it is to be chosen for crossover.
-    this.fitness = Double.MAX_VALUE;
+    long numberOfCollisions =
+        IntStream.range(0, Configuration.BOARD_SIZE)
+            .flatMap(
+                i ->
+                    IntStream.range(i + 1, Configuration.BOARD_SIZE)
+                        .filter(
+                            j ->
+                                Math.abs(chessBoard.get(i) - chessBoard.get(j)) == j - i
+                                    || chessBoard.get(i).equals(chessBoard.get(j))))
+            .count();
+    this.fitness =
+        (double) Configuration.BOARD_SIZE * (Configuration.BOARD_SIZE - 1) - numberOfCollisions;
   }
 }

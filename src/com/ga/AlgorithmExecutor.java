@@ -34,8 +34,8 @@ public class AlgorithmExecutor {
   }
 
   private boolean exitCriterionFulfilled(List<IndividualSolution> population) {
-    // TODO: Given the population, return true if the problem is solved (optional, but saves time).
-    return false;
+    return population.stream()
+        .anyMatch(v -> v.getFitness() == Configuration.BOARD_SIZE * (Configuration.BOARD_SIZE - 1));
   }
 
   private List<IndividualSolution> createFirstGeneration() {
